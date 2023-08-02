@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="gallery.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Home|Shreshta Nutrition</title>
+    <title>Gallery|Shreshta Nutrition</title>
   </head>
-  <body>
+  <body class="bg-white">
     <nav class="bg-blue-600 shadow-lg">
       <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div class="relative flex h-16 items-center justify-between">
@@ -21,10 +21,10 @@
             >
               <span class="sr-only">Open main menu</span>
               <!--
-                  Icon when menu is closed.
-      
-                  Menu open: "hidden", Menu closed: "block"
-                -->
+                    Icon when menu is closed.
+        
+                    Menu open: "hidden", Menu closed: "block"
+                  -->
               <svg
                 class="block h-6 w-6"
                 fill="none"
@@ -40,10 +40,10 @@
                 />
               </svg>
               <!--
-                  Icon when menu is open.
-      
-                  Menu open: "block", Menu closed: "hidden"
-                -->
+                    Icon when menu is open.
+        
+                    Menu open: "block", Menu closed: "hidden"
+                  -->
               <svg
                 class="hidden h-6 w-6"
                 fill="none"
@@ -69,8 +69,7 @@
                 class="logo-img center-block w-16 h-10"
                 src="Images/logo.png"
                 alt=""
-              />
-            </a>
+              /> </a>
             </div>
             <div class="hidden sm:ml-6 sm:block">
               <div class="flex space-x-4">
@@ -138,152 +137,86 @@
         </div>
       </div>
     </nav>
-    <div class="flex items-center justify-center mt-4">
-      <div class="container">
-        <div
-          class="panel active"
-          style="
-            background-image: url('./Images/1.jpg');
-          "
-        ></div>
-        <div
-          class="panel"
-          style="
-            background-image: url('./Images/2.jpg');
-          "
-        ></div>
-        <div
-          class="panel"
-          style="background-image: url('./Images/3.jpg')"
-        ></div>
-        <div
-          class="panel"
-          style="
-            background-image: url('./Images/4.jpg');
-          "
-        ></div>
-      </div>
+    <div class="text-center font-serif text-5xl w-full flex justify-center mt-10">Gallery</div>
+    <div
+      class="full-img flex items-center justify-center h-screen fixed top-0 bottom-0 bg-opacity-90 hidden"
+    >
+      <img src="./Images/m7.jpg" id="fullImg" class="w-90 max-w-xs" />
+      <span
+        onclick="closeFullImg()"
+        class="text-white text-3xl cursor-pointer absolute top-5 right-5"
+        >&times;</span
+      >
     </div>
-    <div>
-      <h3 class="agile-title">Welcome To 'Shresta Nutritions'</h3>
-    </div>
-    <div class="flex items-center px-10 h-3/4">
-      <div class="flex-1">
-        <div>
-          <div class="mb-5 text-4xl text-slate-500 hover:text-sky-400">
-            <h5>
-              About
-              <span>Shresta Nutritions</span>
-            </h5>
-          </div>
-          <p>
-            Shresta Nutritions is a Bangalore based poulrty feed supplying
-            company, we are strongly committed to offer high quality poultry
-            feed to the poultry farmers and support them to bring down their
-            feeding costs by providing them quality products at the best price
-            in the market.
-          </p>
-          <p>
-            We supply Poultry feed for farm poultry, including, chickens, ducks,
-            geese and other domestic birds. The quantity and nutritional
-            requirement of the feed depend on the weight and the age of the
-            poultry as well as the season. Healthy poultry requires a sufficient
-            amount of protein and carbohydrates, along with the necessary
-            vitamins, dietary minerals, and an adequate supply of water.
-          </p>
-
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/ogcn6wxalAQ"
-            title="YouTube video player"
-            frameborder="0"
-            class="mt-8"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen=""
-          ></iframe>
-          
-        </div>
-      </div>
-      <div class="flex-1 flex justify-center items-center h-full">
-        <div
-          class="flex justify-center w-full ml-6 h-full overflow-hidden rounded-md shadow-lg"
-        >
-          <img
-            class="w-full h-full object-fill"
-            src="./Images/about01.jpg"
-            alt=""
-          />
-        </div>
-      </div>
-    </div>
-    <div class="photo mt-1">
-      <div class="magic">
-        <div class="slider-img">
-          <span style="--i: 1"><img src="./Images/m1.jpg" alt="" /></span>
-          <span style="--i: 2"><img src="./Images/m2.jpg" alt="" /></span>
-          <span style="--i: 3"><img src="./Images/m3.jpg" alt="" /></span>
-          <span style="--i: 4"><img src="./Images/m4.jpg" alt="" /></span>
-          <span style="--i: 5"><img src="./Images/m5.jpg" alt="" /></span>
-          <span style="--i: 6"><img src="./Images/m6.jpg" alt="" /></span>
-          <span style="--i: 7"><img src="./Images/m7.jpg" alt="" /></span>
-          <span style="--i: 8"><img src="./Images/m8.jpg" alt="" /></span>
-          <span style="--i: 9"><img src="./Images/m9.jpg" alt="" /></span>
-          <span style="--i: 10"><img src="./Images/m10.jpg" alt="" /></span>
-          <span style="--i: 11"><img src="./Images/m11.jpg" alt="" /></span>
-          <span style="--i: 12"><img src="./Images/m12.jpg" alt="" /></span>
-        </div>
-      </div>
-    </div>
-    <div><h3 class="agile-title mt-1">Our Products</h3></div>
-    
-    <div class="flex cardsbody pl-10 pr-10 -mb-32 -mt-36">
-      <div class="ui-card">
-        <img src="./Images/p01.png" />
-        <div class="description">
-          <h3 class="agile-title">PRE-STARTER CRUMBLE</h3>
-          <p class="agile-title">
-            Balanced nutritive chick feed to optimise the development of the
-            organs and uplift the growth of the chicks with uniform crumble as
-            good as baby care.
-          </p>
-        </div>
-      </div>
-      <div class="ui-card">
-        <img src="./Images/p02.png" />
-        <div class="description">
-          <h3 class="agile-title">STARTER CRUMBLE</h3>
-          <p class="agile-title">
-            Rich in Vitamins & Minerals to expedite the structural development
-            and enhanced weight gain.
-          </p>
-        </div>
-      </div>
-      <div class="ui-card">
-        <img src="./Images/p03.png" />
-        <div class="description">
-          <h3 class="agile-title">GROWER CRUMBLE</h3>
-          <p class="agile-title">
-            Energy, protein and amino acid balanced crumble feed for better
-            growth and maintain flock uniformity.
-          </p>
-        </div>
-      </div>
-      <div class="ui-card">
-        <img src="./Images/p04.png" />
-        <div class="description">
-          <h3 class="agile-title">FINISHER PELLET</h3>
-          <p class="agile-title">
-            Balanced with macro and micro component of nutritive needs to
-            exploit the full genetic potential of the broiler in finisher stage.
-          </p>
-        </div>
-      </div>
+    <div
+      class="img-gallery w-4/5 mx-auto my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+    >
+      <img
+        class="imgborder border-2 border-gray-500 rounded-lg cursor-pointer"
+        src="Images/m7.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <img
+        class="imgborder border-2 border-gray-500 rounded-lg cursor-pointer"
+        src="Images/m8.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <img
+        class="imgborder border-2 border-gray-500 rounded-lg cursor-pointer"
+        src="Images/m9.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <img
+        class="imgborder border-2 border-gray-500 rounded-lg cursor-pointer"
+        src="Images/m10.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <img
+        class="imgborder border-2 border-gray-500 rounded-lg cursor-pointer"
+        src="Images/m11.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <img
+        class="imgborder border-2 border-gray-500 rounded-lg cursor-pointer"
+        src="Images/m12.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <img
+        class="imgborder border-2 border-gray-500 rounded-lg cursor-pointer"
+        src="Images/m13.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <img
+        class="imgborder border-2 border-gray-500 rounded-lg cursor-pointer"
+        src="Images/m14.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <img
+        class="imgborder border-2 border-gray-500 rounded-lg cursor-pointer"
+        src="Images/m15.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <img
+        class="imgborder border-2 border-gray-500 rounded-lg cursor-pointer"
+        src="Images/m16.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <img
+        class="imgborder border-2 border-gray-500 rounded-lg cursor-pointer"
+        src="Images/m17.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <img
+        class="imgborder border-2 border-gray-500 rounded-lg cursor-pointer"
+        src="Images/m19.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <!-- Add more images here -->
     </div>
     <footer >
       <div class="flex justify-center">
         <div
-          class="flex justify-center items-center flex-col bg-blue-600 w-full"
+          class="flex justify-center items-center flex-col bg-blue-600 w-full pr-7 pl-7"
         >
           <div
             class="flex justify-center bg-white w-95 rounded-b-3xl drop-shadow-md"
@@ -351,7 +284,19 @@
         <span class="text-center" > &copy; 2020 All rights reserved | Shresta Nutritions.</span>
       </div>
     </div>
+      </div>
 
-    <script src="script.js"></script>
+    <script>
+      var fullImgBox = document.querySelector(".full-img");
+      var fullImg = document.getElementById("fullImg");
+
+      function openFullImg(pic) {
+        fullImgBox.classList.remove("hidden");
+        fullImg.src = pic;
+      }
+      function closeFullImg() {
+        fullImgBox.classList.add("hidden");
+      }
+    </script>
   </body>
 </html>

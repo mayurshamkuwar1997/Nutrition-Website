@@ -1,0 +1,54 @@
+.footer-heading-font {
+  display: inline-flex;
+  font-size: 2rem;
+  font-weight: 500;
+  border-bottom: 2px solid gray;
+}
+.ourgalleryicon {
+  border-radius: 50%;
+  border: 2px solid gray;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 5px;
+}
+
+.contact-email-position {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.border-bottom {
+  border-bottom: 1px solid black;
+}
+
+.contact-header {
+  border-radius: 0px 10px 10px 0px;
+  width: 50%;
+  padding: 0.8rem;
+  box-shadow: 1px 5px 5px 0px #111827;
+}
+.send-us-message-header {
+  border-radius: 0px 10px 10px 0px;
+  width: 50%;
+  padding: 0.8rem;
+  box-shadow: 1px 5px 5px 0px #111827;
+}
+
+.remove-increment::-webkit-inner-spin-button,
+.remove-increment::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  padding: 5px 20px 5px 10px !important;
+}
+
+/* input::placeholder {
+  padding: 10px;
+  margin: 10px;
+} */

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us Page Design</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css">
+  <link rel="stylesheet" href="contact-us.css">
+</head>
+
+<body class="bg-white">
+  <nav class="bg-blue-600 shadow-lg">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button
+            type="button"
+            class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <!--
+                  Icon when menu is closed.
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+            <svg
+              class="block h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+            <!--
+                  Icon when menu is open.
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+            <svg
+              class="hidden h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+        >
+          <div class="flex flex-shrink-0 items-center">
+            <img
+              class="logo-img center-block w-16 h-10"
+              src="Images/logo.png"
+              alt=""
+            />
+          </div>
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a
+                href="./index.html"
+                class="bg-blue-800 text-white rounded-md px-3 py-2 text-sm font-medium"
+                aria-current="page"
+                >Home</a
+              >
+              <a
+                href="./about-us.html"
+                class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                >About Us</a
+              >
+              <a
+                href="./products.html"
+                class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                >Products</a
+              >
+              <a
+                href="./gallery.html"
+                class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                >Gallery</a
+              >
+              <a
+                href="./contact-us.html"
+                class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+        ></div>
+      </div>
+    </div>
+
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="sm:hidden" id="mobile-menu">
+      <div class="space-y-1 px-2 pb-3 pt-2">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a
+          href="#"
+          class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+          aria-current="page"
+          >Dashboard</a
+        >
+        <a
+          href="#"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+          >Team</a
+        >
+        <a
+          href="#"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+          >Projects</a
+        >
+        <a
+          href="#"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+          >Calendar</a
+        >
+      </div>
+    </div>
+  </nav>
+  <div class="mb-12">
+    <section id="section-wrapper" class="w-full px-2 md:w-11/12 mx-auto">
+      <div class="box-wrapper flex flex-wrap rounded-lg mt-9 bg-white md:flex-nowrap">
+        <div style="background-color: #c1c1a0;" class="pr-1.5 info-wrap w-full md:w-2/3 h-551px text-black rounded-lg rounded-r-none py-12 border border-solid border-black border-4">
+          <div>
+          <div class="contact-header bg-white md:col-span-2 float-left">
+            <h2 class="text-2xl italic">Contact Information</h2>
+          </div>
+        </div>
+        <!-- <div class="border-bottom"> -->
+          <div class="mt-12 contact-email-position mt-24">
+            <div class="contact-email-position mr-16">
+              <div>
+                <img src="./Images/phoneIcon.svg" style="width: 4rem;"/>
+              </div>
+              <div class="ml-5">
+                <div class="text-lg text-center font-bold">
+                  Phone
+                </div>
+                <div>
+                  <div class="text-black">080-23710075</div>
+                  <div class="text-black">9972590075</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="contact-email-position">
+              <div class="contact-email-position mr-2 p-2">
+                <img src="./Images/emailIcon.svg" style="width: 5rem;margin-top: 1rem;" />
+              </div>
+              <div>
+                <div class="text-lg text-black mt-4 text-center font-bold">
+                  Email
+                </div>
+                <div>
+                  <div>
+                    <a href="mailto:info@shrestanutritions.com">info@shrestanutritions.com</a>
+                  </div>
+                  <div>
+                    <a href="mailto:shrestanutritions@gmail.com">shrestanutritions@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        <!-- </div> -->
+         
+          <div class="flex pl-40 mt-16 pb-4">
+          <div class="contact-email-position mr-2 p-2 h-24 mt-4">
+            <img src="./Images/locationIcon.svg" style="width: 5rem;height: 5rem;" />
+          </div>
+          <div class="text-black mt-4">
+            <div>
+            <div class="text-center text-lg font-bold">
+               <div class="text-lg text-black mt-4 text-center font-bold">Location</div>
+            </div>
+            <div class="text-black ml-2 text-justify">
+              <div>No.45, Nagaruru Village, Near Mantri Layout,</div>
+              <div>Huskur Main Road,Bangalore North-562123.</div>
+            </div>
+          </div>
+          </div>
+        </div>
+          <ul class="social-icons mt-8 flex justify-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31090.028758851244!2d77.445959!3d13.083108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae24f283f4633d%3A0x3f6d2014f2fbf047!2sShresta%20Nutritions%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1690291774872!5m2!1sen!2sin"
+              width="600" height="250" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </ul>
+        </div>
+        <div style="background-color: #235455;" class="form-wrap w-full md:w-6/12 rounded-lg rounded-l-none border border-solid border-black border-4">
+          <div>
+            <div class="send-us-message-header italic text-2xl mb-14  bg-white mt-12  w-6/12 text-center">
+              <h2>Send Us Message</h2>
+            </div>
+            <div class="pl-16" style="margin-bottom: 30px;">
+              <form class="max-w-sm">
+                <div class="flex">
+                  <div class="mb-4 pr-8">
+                    <label for="fname" class="block mb-1">First Name</label>
+                    <input type="text" placeholder="Enter first name" id="fname" name="fname" style="background-color: #80808024;border-radius: 1rem;" class="h-12 w-full px-4 py-3 border-b-2 border-black focus:outline-none focus:border-blue-500">
+                  </div>
+                  <div class="mb-4">
+                    <label for="lname" class="block  mb-1">Last Name</label>
+                    <input type="text" placeholder="Enter first name" id="lname" name="lname" style="background-color: #80808024;border-radius: 1rem;" class="h-12 w-full px-4 py-3 border-b-2 border-black focus:outline-none focus:border-blue-500">
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="mb-4 pr-8">
+                    <label for="fname" class="block mb-1 mt-4">Email</label>
+                    <input type="email" placeholder="Enter first email" id="fname" name="fname" style="background-color: #80808024;border-radius: 1rem;" class="h-12 w-full px-4 py-3 border-b-2 border-black focus:outline-none focus:border-blue-500">
+                  </div>
+                  <div class="mb-4">
+                    <label for="lname" class="block  mb-1 mt-4">Phone Number</label>
+                    <input type="number" placeholder="Enter phone number" id="lname" name="lname" style="background-color: #80808024;border-radius: 1rem;" class="remove-increment h-12 w-full px-4 py-3 border-b-2 border-black focus:outline-none focus:border-blue-500">
+                  </div>
+                </div>
+                <div class="mb-4 pr-8">
+                  <label for="fname" class="block mb-2 mt-4">Your Message</label>
+                  <textarea type="text" placeholder="Enter something" id="txtMessage" name="fname" style="background-color: #80808024;border-radius: 1rem;"
+                    class="h-40 w-96 px-4 py-3 border-b-2 border-black focus:outline-none focus:border-blue-500"></textarea>
+                </div>
+                <input type="submit" value="Send"
+                  class="submit-button w-full md:w-32 h-10 mt-5 text-xl font-bold text-white text-center rounded-lg cursor-pointer bg-black shadow-md transition duration-500 hover:bg-black">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  
+    <footer >
+        <div class="flex justify-center">
+          <div
+            class="flex justify-center items-center flex-col bg-blue-600 w-full pr-7 pl-7"
+          >
+            <div
+              class="flex justify-center bg-white w-95 rounded-b-3xl drop-shadow-md"
+            >
+              <div class="p-12">
+                <div class="footer-heading-font mb-6">About Us</div>
+                <div>
+                  'Shresta Nutritions' is a Bangalore based poultry feed supplying
+                  company, we are strongly committed to offer high quality poultry
+                  feed to the poultry farmers and support them to bring down their
+                  feeding costs by providing them quality products at the best
+                  price in the market.
+                </div>
+              </div>
+              <div class="p-12 wrapper">
+                <div class="footer-heading-font mb-6">Our Gallery</div>
+                <div class="grid grid-cols-3 ">
+                  <div class="p-2">
+                    <img class="ourgalleryicon" src="./Images/f1.jpg" />
+                  </div>
+                  <div class="p-2">
+                    <img class="ourgalleryicon" src="./Images/f2.jpg" />
+                  </div>
+                  <div class="p-2">
+                    <img class="ourgalleryicon" src="./Images/f3.jpg" />
+                  </div>
+                  <div class="p-2">
+                    <img class="ourgalleryicon" src="./Images/f4.jpg" />
+                  </div>
+                  <div class="p-2">
+                    <img class="ourgalleryicon" src="./Images/f5.jpg" />
+                  </div>
+                  <div class="p-2">
+                    <img class="ourgalleryicon" src="./Images/f6.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="p-5">
+                <div class="flex text-xl text-white justify-center border-b border-gray-900 pb-2">
+                  Quick Contact
+                </div>
+                <div class="flex flex-col items-center mt-2">
+                  <div>
+                    No.45, Nagaruru Village , Near Mantri Layout, Huskur Main Road,
+                    Bangalore North-562123,
+                  </div>
+                  <div>
+                    <strong>Email : </strong><a>info@shrestanutritions.com</a>
+                  </div>
+                  <div>
+                    <strong>Telephone : </strong>080 - 2371 0075 
+                  </div>
+                  <div>
+                    <strong>Mobile No : </strong> 99725 90075
+                  </div>
+                </div>                
+                </div>
+          </div>
+        </div>
+      </footer>
+      <div>
+        <div class="h-10 flex items-center justify-center">
+          <span class="text-center" > &copy; 2020 All rights reserved | Shresta Nutritions.</span>
+        </div>
+      </div>
+  </body>
+</html>

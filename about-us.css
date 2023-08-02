@@ -1,0 +1,96 @@
+/* Optional, you can put these styles in an external CSS file */
+.accordion {
+  width: 100%;
+}
+
+.accordion-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f7fafc;
+  cursor: pointer;
+}
+
+.accordion-content {
+  padding: 1rem;
+  display: none;
+  background-color: #f7fafc;
+}
+
+.accordion-item.open .accordion-content {
+  display: block;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.profile-card {
+  max-width: 300px;
+  margin: 30px auto;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.profile-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.profile-content {
+  padding: 20px;
+}
+
+.profile-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.profile-title {
+  font-size: 16px;
+  color: #888888;
+  margin-bottom: 20px;
+}
+
+.profile-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.profile-details span {
+  margin-right: 10px;
+}
+
+.profile-links a {
+  text-decoration: none;
+  color: #007bff;
+}
+.footer-heading-font {
+  display: inline-flex;
+  font-size: 2rem;
+  font-weight: 500;
+  border-bottom: 2px solid gray;
+}
+.ourgalleryicon {
+  border-radius: 50%;
+  border: 2px solid gray;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 5px;
+}

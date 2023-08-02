@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+body {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card-container {
+  display: flex;
+  padding-left: 6rem;
+}
+
+.card {
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 15px;
+  text-align: center;
+  background-color: #5d8ab4;
+  box-shadow: 7px 11px 20px 4px black;
+}
+
+img {
+  height: 15rem;
+  margin-bottom: 10px;
+}
+.heading-text {
+  font-size: 2rem;
+  font-family: "Nunito", sans-serif;
+}
+.sub-heading-text {
+  font-size: 1.4rem;
+  font-family: "Nunito", sans-serif;
+}
+
+.benifits-box {
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+
+.benifits-box-design {
+  background-color: burlywood;
+  box-shadow: 4px 8px 6px 3px black;
+}
+.feedtypesdesign {
+  border: 2px solid black;
+  width: 33.333333%;
+  text-align: center;
+  background-color: darkkhaki;
+}
+
+.feed-benifits {
+  background-color: #5d8ab4;
+  border: 2px solid black;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  box-shadow: 1px 3px 4px 1px black;
+}
+.footer-heading-font {
+  display: inline-flex;
+  font-size: 2rem;
+  font-weight: 500;
+  border-bottom: 2px solid gray;
+}
+.ourgalleryicon {
+  border-radius: 50%;
+  border: 2px solid gray;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 5px;
+}
